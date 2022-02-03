@@ -3,6 +3,7 @@
 
 void print_char_11x16(char c)
 {
+  // We start with printable characters
   c -= 0x20;
   for (char row = 0; row < 11; row++) {
     unsigned short rowBits = font_11x16[c][row];
